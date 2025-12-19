@@ -1,3 +1,7 @@
+"use client"
+
+import CountUp from "react-countup";
+
 export function AboutStory() {
   return (
     <section className="py-24 bg-background">
@@ -38,15 +42,21 @@ export function AboutStory() {
 
           <div className="grid grid-cols-3 gap-8 mt-16 text-center">
             <div>
-              <div className="text-4xl font-light text-accent mb-2">6+</div>
+              <div className="text-4xl font-light text-accent mb-2">
+                <CountUp end={6} duration={1} separator=","/>+
+              </div>
               <div className="text-sm text-muted-foreground uppercase tracking-wider">Years Creating</div>
             </div>
             <div>
-              <div className="text-4xl font-light text-accent mb-2">300+</div>
+              <div className="text-4xl font-light text-accent mb-2">
+                <CountUp end={300} duration={1} separator=","/>+
+              </div>
               <div className="text-sm text-muted-foreground uppercase tracking-wider">Happy Clients</div>
             </div>
             <div>
-              <div className="text-4xl font-light text-accent mb-2">500+</div>
+              <div className="text-4xl font-light text-accent mb-2">
+                <CountUp end={500} duration={1} separator=","/>+
+              </div>
               <div className="text-sm text-muted-foreground uppercase tracking-wider">Creations Made</div>
             </div>
           </div>
